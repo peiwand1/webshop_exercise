@@ -1,0 +1,287 @@
+body {
+    width: 800px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #000000;
+    /* background-color: white; */
+}
+
+footer {
+    text-align: right;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    margin-top: auto;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111199;
+}
+
+li {
+    float: left;
+    padding: 4px;
+    border-color: black;
+    border-radius: 1px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li input {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: auto;
+}
+
+input {
+    width: 400px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.shop-items {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.item {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+    min-width: 300px;
+    padding-bottom: 10px;
+}
+
+.item-cart {
+    width: 100%;
+}
+
+.border {
+    border: #010101;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    color: #0b690b;
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-img {
+    object-fit: contain;
+    margin: 10px;
+    max-width: 40%;
+    max-height: 180px;
+}
+
+.item-cart img {
+    max-width: 25%;
+}
+
+.order-amount {
+    border-radius: 8px;
+    border: 1px solid #010101;
+    padding: 8px;
+    width: 82.4px;
+}
+
+.submit-button {
+    background-color: #00ab00;
+    border-radius: 8px;
+    border: 1px solid #00ab00;
+    padding: 8px;
+    width: 100px;
+    height: 34px;
+}
+
+.submit-button:hover {
+    background-color: #009f00;
+    border: 1px solid #009f00;
+}
+
+.submit-button:active {
+    background-color: #007c00;
+    border: 1px solid #007c00;
+}
+
+.star-rating {
+    background-color: #ffd000;
+    border-radius: 8px;
+    border: 1px solid #ffd000;
+    padding: 8px;
+    width: 50px;
+}
+
+.star-rating:hover {
+    background-color: #ffbb00;
+    border: 1px solid #ffbb00;
+}
+
+.item-page {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+}
+
+.cart-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cart-summary {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    height: 120px;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.cart-summary input {
+    width: 100px;
+}
+
+.item-page-img {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-page-img img {
+    object-fit: contain;
+    margin: 10px;
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-page-description {
+    width: 60%;
+}
+
+.formlabel {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.headerMenuRight {
+    float: right;
+}
+
+.headerMenu {
+    margin-bottom: 20px;
+}
+
+.headerMenuFont {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+.center {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.score {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.score-wrap {
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    color: rgb(255, 204, 0);
+}
+
+.score .stars-active {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.score .stars-inactive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: initial;
+    overflow: hidden;
+}
+
+.score .star {
+    cursor: pointer;
+}
+
+.score .voted {
+    color: rgb(0, 76, 255);
+}
